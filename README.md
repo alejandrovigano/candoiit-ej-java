@@ -32,22 +32,22 @@ AlumnoCurso (Grilla de alumnos inscriptos al curso, Grilla de alumnos no inscrip
 Modelo entidades:
 
 ALUMNO
--Nombre
--Apellido
--Dni
--Fecha Nacimiento
--Fecha Alta (del sistema)
--Fecha Baja (del sistema)
+-Nombre  
+-Apellido  
+-Dni  
+-Fecha Nacimiento  
+-Fecha Alta (del sistema)  
+-Fecha Baja (del sistema)  
 
 CURSO
--Descripcion
--Fecha Alta (del sistema)
--Lista de AlumnoCurso
+-Descripcion  
+-Fecha Alta (del sistema)  
+-Lista de AlumnoCurso  
 
 ALUMNO_CURSO
--Alumno
--Curso
--FechaAlta
+-Alumno  
+-Curso  
+-FechaAlta  
 
 ================
 
