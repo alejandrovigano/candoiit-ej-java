@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/pages/template">
+	<excludes>
+		<pattern>/ajax/*</pattern>
+	</excludes>
+	<decorator name="main" page="decorator.jsp">
+		<pattern>/init*</pattern>
+	</decorator>
+</decorators>

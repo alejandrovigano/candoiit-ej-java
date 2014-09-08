@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="ar.com.candoit.vga.common.entities.AlumnoCurso" table="ALUMNO_CURSO">
+
+		<id name="id" column="ID">
+			<generator class="native" />
+		</id>
+		<many-to-one name="curso" class="ar.com.candoit.vga.common.entities.Curso" fetch="select">
+			<column name="ID_CURSO" not-null="true" />
+		</many-to-one>
+		<many-to-one name="alumno" class="ar.com.candoit.vga.common.entities.Alumno" fetch="select">
+			<column name="ID_ALUMNO" not-null="true" />
+		</many-to-one>
+		<property name="fechaAlta" column="FECHA_ALTA" type="timestamp" />
+
+	</class>
+</hibernate-mapping>

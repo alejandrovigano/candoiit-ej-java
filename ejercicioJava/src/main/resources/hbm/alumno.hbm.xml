@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="ar.com.candoit.vga.common.entities.Alumno" table="ALUMNO">
+
+		<id name="id" column="ID">
+			<generator class="native" />
+		</id>
+		<property name="nombre" column="NOMBRE" />
+		<property name="apellido" column="APELLIDO" />
+		<property name="dni" column="DNI" />
+		<property name="fechaNacimiento" column="FECHA_NACIMIENTO" type="timestamp" />
+		<property name="fechaAlta" column="FECHA_ALTA" type="timestamp" />
+		<property name="fechaBaja" column="FECHA_BAJA" type="timestamp" />
+
+	</class>
+</hibernate-mapping>

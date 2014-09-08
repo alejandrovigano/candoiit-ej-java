@@ -1,0 +1,72 @@
+/* CSS EjercicioJava */
+html {
+	height: 100%;
+	overflow: hidden;
+	box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.2);
+	background: #ffffff;
+	background: -webkit-linear-gradient(#ffffff, #BFBFDB);
+	background: -o-linear-gradient(#ffffff, #BFBFDB);
+	background: -moz-linear-gradient(#ffffff, #BFBFDB);
+	background: linear-gradient(#ffffff, #BFBFDB);
+}
+
+body {
+	margin: 0px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.content{
+	height: 100%;
+}
+
+.titulo h1 {
+	font-size: 1.2em;
+	padding-left: 1em;
+}
+
+.seccion{
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.formulario {
+	width: 100%;
+}
+
+.formulario table {
+	width: 100%;
+}
+
+.grilla {
+	width: 98%;
+}
+
+#mainContainer {
+	width: 100%;
+	height: 100%;
+}
+
+#reloadContainer {
+	position: relative;
+	margin-left: 5%; width : 80%;
+	height: 100%;
+	width: 80%;
+}
+
+#menuContainer {
+	float: left;
+	width: 20%;
+}
+
+#mainContainer {
+	float: right;
+	width: 80%;
+}
+
+/**/
+.ui-widget {
+	font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="ar.com.candoit.vga.common.entities.Curso" table="CURSO">
+
+		<id name="id" column="ID">
+			<generator class="native" />
+		</id>
+		<property name="denominacion" column="DESCRIPCION" />
+		<property name="fechaAlta" column="FECHA_ALTA" type="timestamp" />
+		<set name="alumnos" table="ALUMNO_CURSO" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID" not-null="true" />
+            </key>
+            <one-to-many class="ar.com.candoit.vga.common.entities.AlumnoCurso" />
+        </set>
+	</class>
+	
+</hibernate-mapping>
